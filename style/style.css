@@ -1,0 +1,17 @@
+
+
+.b-bottom{
+    background-color: rgb(209, 207, 212);
+}
+.b-main{
+    background-color: rgb(235, 232, 238);
+}
+
+
+@media screen and (min-width: 768px){
+    .b-bottom, .b-main{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+}
