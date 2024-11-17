@@ -43,12 +43,49 @@ header nav ul li{
 }
 
 
-  /*---     ---*/
+  /*---main ---*/
+#block-name-1, #block-name-2, #block-name-3, 
+#block-name-4, #block-name-5, #block-name-6,
+#block-name-7, #block-name-8, #block-name-9{
+    text-align: center;
+}
 .b-bottom{
     background-color: rgb(209, 207, 212);
+    width: 100%;
 }
 .b-main{
     background-color: rgb(235, 232, 238);
+    width: 100%;
+}
+.b-info-1 img{
+    max-width: 81px;
+    max-height: 81px;
+}
+
+.b-info-3 p{
+    border-left: 4px solid rgb(139, 106, 168);
+    padding: 5px;
+}
+.square p{
+    background-color: rgb(173, 173, 175);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.square img{
+    float:right;
+    padding:0;
+    margin:0;
+    width: 84px;
+    height: 84px;
+}
+.square span{
+    position: absolute;
+    padding: 5%;
+}
+
+.b-info-4 div{
+    text-align: center;
 }
 
 
@@ -56,6 +93,9 @@ header nav ul li{
     .b-bottom, .b-main{
         padding-left: 15vw;
         padding-right: 15vw;
+    }
+    #side-img{
+        right: 15vw;
     }
 
 }
