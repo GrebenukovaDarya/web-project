@@ -9,12 +9,26 @@ $(document).ready(function(){
     });
 });
 
+let flag=true;
+
 window.addEventListener("DOMContentLoaded", function () {
     const openBtn = document.getElementById("open-button");
-    let popup = document.getElementById("member");
-    //let overlay = document.getElementById("overlay");
+    let h1 = document.getElementById("hidden-1");
+    let h2 = document.getElementById("hidden-2");
+    let h3 = document.getElementById("hidden-3");
+    
     openBtn.addEventListener("click", function () {
-        popup.style.display = "block";
-        //overlay.classList.add("show");
+        if(flag){
+            h1.style.display = "block";
+            h2.style.display = "block";
+            h3.style.display = "block";
+            flag=false;
+        }
+        else{
+            h1.style.display = "none";
+            h2.style.display = "none";
+            h3.style.display = "none";
+            flag=true;
+        }
     });
 });
