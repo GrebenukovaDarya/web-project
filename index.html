@@ -43,28 +43,40 @@
                 <nav class="col-md-10 px-0 justify-content-around">
                     <ul class="p-0 py-3 py-md-0 m-0 w-md-auto ">
                         <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> ПОДДЕРЖКА DRUPAL </a></li>
-                        <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> АДМИНИСТРИРОВАНИЕ </a></li>
+                        
+                        <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> 
+                          <div class="dropdown">
+                            <button class="dropbtn">АДМИНИСТРИРОВАНИЕ <img src="style/img/arrow-lang.svg" alt=""></button>
+                            <div class="dropdown-content">
+                              <a href="#">МИГРАЦИЯ</a>
+                              <a href="#">БЭКАПЫ</a>
+                              <a href="#">АУДИТ БЕЗОПАСНОСТИ</a>
+                              <a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                              <a href="#">ПЕРЕЕЗД НА HTTPS</a>
+                              
+                            </div>
+                          </div>
+                          
+                        </a></li>
                         
                         <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> ПРОДВИЖЕНИЕ</a></li>
-                        <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> О НАС </a></li>
+                        <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> <div class="dropdown">
+                          <button class="dropbtn">О НАС <img src="style/img/arrow-lang.svg" alt=""></button>
+                          <div class="dropdown-content">
+                            <a href="#">КОМАНДА</a>
+                            <a href="#">ВАКАНСИИ</a>
+                          </div>
+                        </div> </a></li>
                         
                         <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> ПРОЕКТЫ </a></li>
                         <li class="py-2 px-3 float-md-left"> <a  href="" class="nav-link p-0 text-center"> КОНТАКТЫ </a></li>
                     </ul>
-                    <!--
-                    <ul class="p-0 py-3 py-md-0 m-0 w-md-auto">
-                      <a class="p-2 float-md-right" href=""><img src="./style/img/arrow-lang.svg" alt=""></a>
-                      <li class="p-2 float-md-right"> <a  href="" class="text-center"> RU </a></li>
-                      <li class="p-2 float-md-right"> <a  href="" class="text-center"> 8 800 222-26-73 </a></li>
-                      
-                  </ul>
-                    -->
                 </nav>
 
               </div>
             
-          <div class="header-cont container d-flex py-md-5">
-              <div class="col-md-6 col-12 pr-4">
+          <div class="header-cont container  d-flex col-md-12 py-md-5 mx-md-0 ">
+              <div class="right-col col-md-6 pr-4 mr-md-4">
                 <div class="header-title">
                   Поддержка сайтов на Drupal
                 </div>
@@ -74,35 +86,37 @@
                 </div>
                   
                 <div class="button-tariff col-md-5 my-4">
-                    <p class="text-center my-2">ТАРИФЫ</p>
+                  <div class="block-main-wrapper">
+                    <a href="/index.html#tariffs" class="block-main-btn flowing-scroll">ТАРИФЫ</a>
+                  </div>
+
                 </div>
 
               </div>
-
-              <div class="row row-cols-2 pl-2">
-                  <div class="advantages-header col col-md-4 my-3">
+              
+              <div class="row pl-2 ml-md-4">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2 "> 
                       <h1>#1 <img src="style/img/cup.png" alt=""></h1> 
-                      
                       Drupal-разрабочтик в России по версии Рейтинга Рунета 
                     </p>
                   </div>
-                  <div class="advantages-header col col-md-4 my-3">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2"> <h2>3+</h2> средний опыт специалистов более 3 лет</p>
                     
                   </div>
-                  <div class="advantages-header col col-md-4 my-3">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2"> <h2>14</h2> лет опыта в сфере Drupal </p>
                     
                   </div>
-                  <div class="advantages-header col col-md-4 my-3">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2"><h2>50+</h2> модулей и тем в формает DrupalGive</p>
                   </div>
-                  <div class="advantages-header col col-md-4 my-3">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2"> <h2>90 000+</h2> часов поддержки на Drupal </p>
                     
                   </div>
-                  <div class="advantages-header col col-md-4 my-3">
+                  <div class="advantages-header col-6 col-md-4 my-3">
                     <p class="pl-2"> <h2>300+</h2> Проектов на поддержке </p>
                     
                   </div>
@@ -196,7 +210,7 @@
             <img alt="side-img" class="col-md-6 col-12 order-2 order-md-1 px-0" id="side-img" src="style/img/laptop.png">
           </div>
 
-          <div class="b-tarif col-12">
+          <div class="b-tarif col-12" id="tariffs">
             <h2 id="block-name-2"> Тарифы </h2>
           </div>
 
