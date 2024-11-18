@@ -190,6 +190,23 @@ nav{
     display: none;
 }
 
+.btn-open {
+    text-align: center;
+}
+
+.b-t{
+    width: 100%;
+}
+.t-part{
+    width: 100%;
+    background-color: rgb(196, 208, 218);
+}
+
+.t-part h3, .t-part ul{
+    padding: 1vw;
+    margin-left: 5%;
+}
+
 
 @media screen and (min-width: 768px){
 
@@ -208,6 +225,7 @@ nav{
     padding-left: 15vw;
     padding-right: 15vw;
 }
+
   /*---main ---*/
     .b-bottom, .b-main{
         padding-left: 15vw;
