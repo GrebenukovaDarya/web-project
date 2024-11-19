@@ -155,9 +155,17 @@ nav{
     background-color: rgb(235, 232, 238);
     width: 100%;
 }
-.b-info-1 img{
+
+.info-1-block{
+    background-color: #d2d2d2;
+    border-radius: 5px;
+}
+.info-1-block p{
     max-width: 81px;
     max-height: 81px;
+}
+.info-1-block p img{
+   
 }
 
 .b-info-3 p{
@@ -190,6 +198,28 @@ nav{
     display: none;
 }
 
+.btn-open {
+    text-align: center;
+}
+
+.b-t{
+    width: 100%;
+}
+.t-part{
+    width: 100%;
+    background-color: rgb(196, 208, 218);
+}
+
+.t-part h3, .t-part ul{
+    padding: 1vw;
+    margin-left: 5%;
+}
+
+.b-team img{
+    max-height: 200px;
+    max-width: 100px;
+}
+
 
 @media screen and (min-width: 768px){
 
@@ -208,6 +238,7 @@ nav{
     padding-left: 15vw;
     padding-right: 15vw;
 }
+
   /*---main ---*/
     .b-bottom, .b-main{
         padding-left: 15vw;
