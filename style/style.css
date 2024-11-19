@@ -174,55 +174,82 @@ nav{
 }
 */
 
-  /*---main ---*/
-#block-name-1, #block-name-2, #block-name-3, 
-#block-name-4, #block-name-5, #block-name-6,
-#block-name-7, #block-name-8, #block-name-9{
+  /*---main---*/
+  .block-name{
     text-align: center;
 }
-.b-bottom{
-    background-color: rgb(209, 207, 212);
-    width: 100%;
+.underlined{
+    text-decoration: underline;
 }
 .b-main{
     background-color: rgb(235, 232, 238);
     width: 100%;
 }
-
-.info-1-block{
-    background-color: #d2d2d2;
+button{
     border-radius: 5px;
 }
-.info-1-block p{
-    max-width: 81px;
-    max-height: 81px;
+
+  /*---info-1---*/
+.inf-1-block{
+    background-color: #ffffff;
+    border-radius: 10px;
 }
-.info-1-block p img{
-   
+.inf-1-block img{
+    background-image: url(img/icon-bg.svg);
+}
+.inf-1-block p{
+    text-align: center;
 }
 
-.b-info-3 p{
-    border-left: 4px solid rgb(139, 106, 168);
-    padding: 5px;
-}
-.square p{
+  /*---info-2---*/
+.square-wrapper{
     background-color: rgb(173, 173, 175);
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
-.square img{
+.square-wrapper img{
+    display: block;
+    max-width: 100%;
+    height: auto;
     float:right;
     padding:0;
     margin:0;
-    width: 84px;
-    height: 84px;
-}
-.square span{
-    position: absolute;
-    padding: 5%;
 }
 
+  /*---info-3---*/
+.b-info-3 p{
+    border-left: 4px solid rgb(139, 106, 168);
+    padding: 5px;
+}
+
+  /*---tariffs---*/
+.b-t{
+    width: 100%;
+}
+.t-part, .t-part-b{
+    width: 100%;
+    background-color: rgb(196, 208, 218);
+}
+.t-button{
+    text-align: center;
+    border-radius: 10px;
+}
+.t-part h3, .t-part ul,
+.t-part-b h3, .t-part-b ul{
+    padding: 1vw;
+    margin-left: 5%;
+    margin-bottom:1%;
+}
+.t-part h3, .t-part-b h3{
+    border-bottom: 2px solid rgb(133, 133, 133);
+    padding: 5px;
+}
+#t-a{
+    color:black;
+}
+
+  /*---info-4---*/
 .b-info-4 div{
     text-align: center;
 }
@@ -235,22 +262,32 @@ nav{
     text-align: center;
 }
 
-.b-t{
-    width: 100%;
-}
-.t-part{
-    width: 100%;
-    background-color: rgb(196, 208, 218);
-}
-
-.t-part h3, .t-part ul{
-    padding: 1vw;
-    margin-left: 5%;
-}
 
 .b-team img{
     max-height: 200px;
     max-width: 100px;
+}
+
+.test{
+    background-color: #d83016;
+}
+  /*---footer---*/
+.bottom-wrapper{
+    background-color: rgb(209, 207, 212);
+    width: 100%;
+}
+input, textarea{
+    border-radius: 5px;
+}
+.submit-btn{
+    border-radius: 8px;
+    text-align: center;
+}
+footer{
+    border-top: 2px solid rgb(133, 133, 133);
+}
+.footer-body{
+    padding: 3%;
 }
 
 
@@ -279,12 +316,37 @@ nav{
 }
 
   /*---main ---*/
-    .b-bottom, .b-main{
-        padding-left: 15vw;
-        padding-right: 15vw;
-    }
-    #side-img{
-        right: 15vw;
-    }
+  .b-bottom, .b-main{
+    width:100%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+#side-img{
+    right: 15vw;
+}
+.t-part h3, .t-part ul,
+.t-part-b h3, .t-part-b ul{
+padding: 1vw;
+padding-left: 0%;
+margin-left: 15%;
+margin-bottom:1%;
+}
+#overlay{
+    z-index: 9998;
+    background-color: rgba(255, 255, 255, 0.333);
+}
+.t-part-b{
+    height:310px;
+}
+.t-part{
+    height:330px;
+    box-shadow: 0px 10px 15px rgba(49, 49, 49, 0.625);
+}
+
+/*---main ---*/
+.footer-body{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
 
 }
