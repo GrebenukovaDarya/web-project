@@ -1,5 +1,23 @@
 a{
     color: aliceblue;
+    text-decoration: none;
+    position: relative;
+}
+nav>ul>li>a:link, nav>ul>li>a:hover, nav>ul>li>a:active { color: aliceblue; text-decoration: none; }
+nav>ul>li>a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color: #f14d34; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.4s ease-out; /*задаём время анимации*/
+}
+
+nav>ul>li>a:hover:after,
+nav>ul>li>a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 /* Dropdown Button */
@@ -21,7 +39,7 @@ a{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f14d34;;
+    background-color: #f14d34;
     min-width: 160px;
     z-index: 1;
 }
@@ -80,6 +98,21 @@ body {
     min-height: 100%;
 }
 /*---header---*/
+
+.menu{
+    display: flex; 
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+nav{
+    display: none;
+}
 header{
     width:100%;
     height: 100%;
@@ -225,7 +258,13 @@ nav{
 
   /*---header ---*/
 .menu{
+    background-color: transparent;
+    position:relative;
+    display: inline;
     order: 0;
+}
+nav{
+    display:inline;
 }
 .right-col{
     text-align:unset;
