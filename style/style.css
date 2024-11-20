@@ -193,8 +193,12 @@ button{
 .inf-1-block{
     background-color: #ffffff;
     border-radius: 10px;
+    
 }
-.inf-1-block img{
+.inf-1-img{
+    background-position: 25% 0%;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
     background-image: url(img/icon-bg.svg);
 }
 .inf-1-block p{
@@ -203,10 +207,40 @@ button{
 
   /*---info-2---*/
 .square-wrapper{
-    background-color: rgb(173, 173, 175);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(115, 115, 115, 0.625);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.square-num, .square-body{
+    color:#525252;
+}
+#sq-1{
+    background-image: url(img/support1.svg);
+}
+#sq-2{
+    background-image: url(img/support2.svg);
+}
+#sq-3{
+    background-image: url(img/support3.svg);
+}
+#sq-4{
+    background-image: url(img/support4.svg);
+}
+#sq-5{
+    background-image: url(img/support5.svg);
+}
+#sq-6{
+    background-image: url(img/support6.svg);
+}
+#sq-7{
+    background-image: url(img/support7.svg);
+}
+#sq-8{
+    background-image: url(img/support8.svg);
 }
 .square-wrapper img{
     display: block;
@@ -219,31 +253,54 @@ button{
 
   /*---info-3---*/
 .b-info-3 p{
-    border-left: 4px solid rgb(139, 106, 168);
+    border-left: 4px solid #f14d34;
     padding: 5px;
 }
 
   /*---tariffs---*/
-.b-t{
-    width: 100%;
-}
 .t-part, .t-part-b{
-    width: 100%;
-    background-color: rgb(196, 208, 218);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid #dfdede;
+}
+.t-body{
+    padding: 5%;
+    height: 80%;
 }
 .t-button{
     text-align: center;
-    border-radius: 10px;
+    margin-top: 0%;
+    margin-bottom:5%;
 }
-.t-part h3, .t-part ul,
-.t-part-b h3, .t-part-b ul{
+.t-button button{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 80%;
+    background-color: #f14d34;
+    border-color: #f14d34;
+    color: #ffffff;
+}
+#t-btn-b{
+    background-color: #ffffff00;
+    border-color: #f14d34;
+    color: #f14d34;
+}
+.b-tarif h3, .b-tarif ul{
     padding: 1vw;
-    margin-left: 5%;
-    margin-bottom:1%;
+    padding-left: 0%;
+    margin-bottom: 2%;
+    margin-top: 5%;
 }
-.t-part h3, .t-part-b h3{
-    border-bottom: 2px solid rgb(133, 133, 133);
-    padding: 5px;
+.b-tarif li{
+    list-style-type: none;
+}
+.b-tarif li::before {
+    color: #f14d34;
+    content: "✓"; /* Маркер списка */
+    padding-right: 0.3em; /* Расстояние от маркера до текста */
+}
+.b-tarif h3{
+    border-bottom: 2px solid #dfdede;
 }
 #t-a{
     color:black;
@@ -320,33 +377,30 @@ nav{
     width:100%;
     padding-left: 15vw;
     padding-right: 15vw;
-}
-#side-img{
-    right: 15vw;
-}
-.t-part h3, .t-part ul,
-.t-part-b h3, .t-part-b ul{
-padding: 1vw;
-padding-left: 0%;
-margin-left: 15%;
-margin-bottom:1%;
-}
-#overlay-1, #overlay-2{
-    z-index: 9998;
-    background-color: rgba(255, 255, 255, 0.333);
-}
-.t-part-b{
-    height:310px;
-}
-.t-part{
-    height:330px;
-    box-shadow: 0px 10px 15px rgba(49, 49, 49, 0.625);
-}
+    }
+    #side-img{
+        right: 15vw;
+    }
+    .inf-1-img{
+        background-position: 0% 0%;
+        background-size: 80px 80px;
+    }
+    #overlay-1, #overlay-2{
+        background-color: rgba(255, 255, 255, 0.333);
+        border-radius: 5px;
+    }
+    .t-part-b{
+        height:310px;
+    }
+    .t-part{
+        height:330px;
+        box-shadow: 0px 10px 15px rgba(49, 49, 49, 0.625);
+    }
 
-/*---main ---*/
-.footer-body{
-    padding-left: 15vw;
-    padding-right: 15vw;
-}
+    /*---main ---*/
+    .footer-body{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
 
 }
