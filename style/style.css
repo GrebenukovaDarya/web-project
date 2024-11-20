@@ -331,7 +331,7 @@ padding-left: 0%;
 margin-left: 15%;
 margin-bottom:1%;
 }
-#overlay{
+#overlay-1, #overlay-2{
     z-index: 9998;
     background-color: rgba(255, 255, 255, 0.333);
 }
