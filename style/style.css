@@ -260,6 +260,9 @@ button{
     border-left: 4px solid #f14d34;
     padding: 5px;
 }
+.b-info-3 h2{
+    max-height: 60px;
+}
 
   /*---tariffs---*/
 .t-part, .t-part-b{
@@ -337,9 +340,23 @@ button{
 .b-accordion section:target {   
     border-color: #f14d34;
     color: #f14d34;
-    background:#982222;   
+    background:#af5353;   
     padding:10px;  
-}  
+} 
+/*
+nav>ul>li>a:link, nav>ul>li>a:hover, nav>ul>li>a:active { color: aliceblue; text-decoration: none; }
+nav>ul>li>a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 3px; 
+	background-color: #f14d34;
+	content: "";
+	transition: width 0.4s ease-out; 
+}
+*/
+ 
   /*---footer---*/
 .bottom-wrapper{
     background-color: rgb(30, 22, 42);
@@ -418,10 +435,19 @@ nav{
         right: 15vw;
     }
     .inf-1-img{
-        background-position: -25% 0%;
-    }
+        background-position: 25% 0%;
+      }
     .inf-4-img{
-        background-position: -70% 0%;
+        background-position: 100% 0%;
+    }
+    .inf-3-body{
+        align-items:center;
+    }
+    .inf-3-body h2{
+        height: 20%;
+    }
+    .inf-3-articles{
+        height: 80%;
     }
     #overlay-1, #overlay-2{
         background-color: rgba(255, 255, 255, 0.333);
