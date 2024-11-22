@@ -25,7 +25,7 @@ nav>ul>li>a:focus:after {
     background-color: transparent;
     color: white;
     font-size: 12px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     border: none;
 }
 
@@ -65,8 +65,8 @@ nav>ul>li>a:focus:after {
 .block-main-btn{
     display: inline-block;
     font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
     line-height: 1;
     color: #fff;
     text-decoration: none;
@@ -136,7 +136,7 @@ header nav ul li{
     list-style: none;
     text-decoration: none;
     font-size: 12px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     float: right;
 }
 nav ul{
@@ -149,12 +149,12 @@ nav{
 .header-title{
     font-size: 50px;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 .header-text-info{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 .right-col{
     text-align:center;
@@ -164,8 +164,8 @@ nav{
 }
 .advantages-header{
     border-left: 5px solid #f14d34;
-    font-size: 14px;
-    letter-spacing: 1.5px;  
+    font-size: 12px;
+    letter-spacing: 1.2px;  
 } 
 
 /*
