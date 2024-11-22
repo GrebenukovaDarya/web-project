@@ -20,6 +20,8 @@ nav>ul>li>a:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
+
+
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
@@ -103,7 +105,6 @@ body {
     display: flex; 
     align-items: center;
     padding: 0;
-    width: 100%;
     height: 50px;
     background-color: black;
     position: fixed;
@@ -111,6 +112,17 @@ body {
     z-index: 9999;
 }
 nav{
+    display: none;
+}
+#menu1 {
+    visibility: visible;
+    opacity: 1;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#menu-open {
     display: none;
 }
 header{
@@ -390,6 +402,16 @@ footer{
 @media screen and (min-width: 768px){
 
   /*---header ---*/
+#menu1 {
+    font-size: 0rem;
+    color: var(--blue);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+#menu-open {
+    display: none;
+}
 .menu{
     background-color: transparent;
     position:relative;
