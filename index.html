@@ -6,18 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js" defer ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/slick.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
     <!-- Наши js и css файлы -->
+
+
     <link rel="stylesheet"  href="style/style.css">
+    <link rel="stylesheet"  href="style/slick.css"> 
+    <!-- <link rel="stylesheet"  href="style/slick-theme.css"> -->
+
     <script src="script/form.js" defer></script>
     <script src="script/buttons.js" defer></script>
+    <script src="script/slider.js" defer></script>
 
     <title>Project</title>
 </head>
@@ -463,35 +471,128 @@
       </div>
 
       <div class="b-reviews col-12">
-        <h2 class="block-name"> отзывы </h2>
+        <h2 class="block-name mb-5"> Отзывы </h2>
 
-        <div class="slider responsive">
-          <div>
-          <h3>1</h3>
-         </div>
-         <div>
-          <h3>2</h3>
-         </div>
-         <div>
-          <h3>3</h3>
-         </div>
-         <div>
-          <h3>4</h3>
-         </div>
-         <div>
-          <h3>5</h3>
-         </div>
-         <div>
-          <h3>6</h3>
-         </div>
-         <div>
-          <h3>7</h3>
-         </div>
-         <div>
-          <h3>8</h3>
-         </div>
+
+        <div class="view-slider mt-5">
+          
+          <div class="b-slider p-4 mx-lg-5 mx-2 row d-flex">
+            <div class="slider single-item col-12 col-md-8">
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-1" src="style/img/logo_0.png">
+                <div class="slide-body">
+                  Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, 
+                  который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть,
+                  привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не 
+                  проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не 
+                  работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими 
+                  существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж 
+                  мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не 
+                  самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, 
+                  отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей 
+                  обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, 
+                  поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, 
+                  что наше сотрудничество затянется надолго! Спасибо!!!
+                </div>
+                <div class="slide-bot">
+                  С уважением, Наталья Сушкова руководитель Отдела веб-проектов Группы компаний «Си Эль парфюм» 
+                  <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-2" src="style/img/logo_2.png">
+                <div class="slide-body">
+                  2222 <br> 32<br>23y
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-3" src="style/img/logo-estee.png">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-4" src="style/img/logo.png">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-5" src="style/img/farbors_ru.jpg">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-6" src="style/img/lpcma_rus_v4.jpg">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-7" src="style/img/nashagazeta_ch.png">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+              <div class="slide p-2 col-12 col-md-8">
+                <img class="mb-4" alt="rev-logo-8" src="style/img/cableman_ru.png">
+                <div class="slide-body">
+                  text
+                </div>
+                <div class="slide-bot">
+                   text
+                  <a href="http://www.cielparfum.com/" tabindex="0"> url </a>
+                </div>
+              </div>
+
+            </div>
+
+            <nav class="slick-arrow-wrapper col-12 col-md-4 p-3 d-flex justify-content-around">
+              <div class="slick-arrow d-flex" >
+                <button id="my-arrow-prev" class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
+                <span class="slide-num px-3 py-2">
+                  <span class="slide-num-current" id="slide-current-number">01</span> / 08
+                </span>
+                <button id="my-arrow-next" type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" >Next</button>
+              </div>
+            </nav>
+
           </div>
-
+    
+        </div>
       </div>
 
       <div class="b-slide col-12">
