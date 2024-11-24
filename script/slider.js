@@ -32,3 +32,41 @@ nextbtn.addEventListener("click", function () {
     }
     num.innerHTML = '0' + n;
 });
+
+$('.autoplay-1').slick({
+    arrows: false,
+    adaptiveWidth: false,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    centerMode: true,
+    
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 3
+            }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 2
+          }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                slidesToShow: 1
+            }
+        }
+    ]
+  });
