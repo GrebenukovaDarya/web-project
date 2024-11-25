@@ -26,7 +26,7 @@
     <script src="script/form.js" defer></script>
     <script src="script/buttons.js" defer></script>
     <script src="script/slider.js" defer></script>
-
+    <script src="script/openmenuс.js" defer></script>
     <title>Project</title>
 </head>
 
@@ -42,14 +42,12 @@
           </video>
           
           <div class="navigation container row d-flex mt-5 col-12 ">
-              
-              
+              <div class="menu col-md-12 order-1"> 
 
-              <div class="menu col-md-12 w-100 order-1">
-                
-                
+               
+                  
                 <nav class="col-md-10 px-0 justify-content-around">
-                    <input type="checkbox" name="menu-open" id="menu-open">
+                    <input type="checkbox" id="check-menu" class="check-menu">
                     <ul class="p-0 py-3 py-md-0 m-0 w-md-auto ">
                         <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-center"> ПОДДЕРЖКА DRUPAL </a></li>
                         
@@ -85,10 +83,13 @@
                         <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-center"> КОНТАКТЫ </a></li>
                     </ul>
                 </nav>
+                
                 <div class="logo col-md-2 float-md-left">
                   <a href="index.html"> <img alt="logo" id="logo" class="my-2" src="./style/img/drupal-coder.svg" width="140" height="20" ></a>
-                  <label for="menu-open" id="menu1" style="background-image: url(../style/image/менюю.png);">MENU</label>
+                  <!-- <div id="button-menu" class="button-menu">MENU</div> -->
+                  <label for="check-menu" class="check-menu">Текст</label>
                 </div>
+                
               </div>
             
           <div class="header-cont container d-flex col-md-12 py-md-5 px-md-0 mx-md-0 my-4 ">
@@ -143,7 +144,7 @@
     </div>
 
   <!--main-->
-  <div class="b-main container-fluid page">
+  <div class="b-main container page">
     <div class="row d-flex px-0">
 
       <div class="b-info-1 col-12 py-5">
@@ -670,8 +671,8 @@
   </div>
     
 <!--footer-->
-  <div class="bottom-wrapper container-fluid page row d-flex mx-0">
-    <div class="b-bottom col-12 row d-flex p-3 mx-0">
+  <div class="bottom-wrapper container page">
+    <div class="b-bottom col-12 row d-flex pb-3 px-0 mx-0">
       <div class="b-footer-text col-md-6 order-1 order-md-1 col-12 p-3">
         <h2 class="block-name mb-3"> Оставить заявку на <br> поддержку сайта</h2>
         <p> Срочно нужна поддержка сайта? 
@@ -719,7 +720,7 @@
 
     </div>
 
-    <footer class="col-12 order-3 order-md-3 p-3 mx-0">
+    <footer class="col-12 order-3 order-md-3 px-3 pt-3 pb-5 py-md-3">
       <div class="footer-body p-0">
         <ul class="sns-wrapper row d-flex px-3">
           <li class="sns"><a title="Facebook" href="index.html"><img alt="logo-fb" src="style/img/logo-facebook.png"></a></li>
