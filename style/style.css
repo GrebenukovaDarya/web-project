@@ -383,6 +383,11 @@ header nav{
 .team-block h3, .team-block p{
     max-width: 280px;
 }
+ /*---text---*/
+.case-wrapper img{
+    max-width: 100%;
+    border-radius: 8px;
+}
   /*---slider---*/
 .view-slider::before{
     content: "";
@@ -478,6 +483,7 @@ header nav{
     padding-right: 0;
     display: block;
     background-color: #af5353;
+    overflow: hidden;
 }
 .slick-track {
     position: relative;
@@ -701,6 +707,11 @@ header nav{
     }
 
 }
+@media screen and (min-width: 1000px){
+    .t-part {
+        max-height: 500px;
+    }
+}
 
 /*---text---*/
 
@@ -710,9 +721,12 @@ body{
 .block-name{
     font-weight: 500;
 }
+.b-accordion {
+    color: #050C33;
+}
 .b-info-1 h2, .b-info-2 h2, .b-tarif h2, 
 .b-reviews h2, .b-slider-2 h2, .b-team h2,
-.b-info-4 h2, .b-case h2{
+.b-info-4 h2, .b-case h2, .b-accordion h2{
     font-weight: 700;
     color: #050C33;
 }
@@ -750,9 +764,12 @@ body{
     font-size: 12px;
     font-weight: 500;
 }
+.b-team p{
+    font-size: 14px;
+}
 .b-info-1 p, .square-num, .square-body,
 .t-body ul, .b-tarif p, .slide-bot, .b-slider-2 p,
-.b-info-4 p{
+.b-info-4 p, .b-accordion p {
     color:#4F5A73;
     font-size: 16px;
     font-weight: 500;
@@ -787,17 +804,37 @@ body{
 .article-body a{
     color:#f14d34;
 }
-.b-t h3{
+.b-t h3 {
     color:#f14d34;
     font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 700;
 }
+
 .t-button{
     font-family: 'Montserrat';
     font-weight: 700;
 }
 
+.b-accordion h3 {
+
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 600;
+}
+.active-acc-text {
+    color: #f14d34;
+}
+
+.q-num {
+    color:#4F5A73;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.active {
+    border: 4px solid #f14d34;
+}
 
 @font-face {
     font-family: 'Montserrat';
