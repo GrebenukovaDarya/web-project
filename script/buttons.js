@@ -1,14 +1,24 @@
-$(document).ready(function(){
-    $(".b-accordion div:first").addClass("active");
+$(document).ready(function() {
+    
+    $(".b-accordion article:first").addClass("active");
+    $(".b-accordion h3:first").addClass("active-acc-text");
     $(".b-accordion p:not(:first)").hide();
-    $(".b-accordion div").click(function(){
-    $(this).next("p").slideToggle("slow")
-    .siblings("p:visible").slideUp("slow");
-    $(this).toggleClass("active");
-    $(this).siblings("div").removeClass("active");
+
+    $(".b-accordion div").click(function() {
+        $(this).parent("article").siblings("article").removeClass("active");
+        $(this).parent("article").toggleClass("active");
+
+        $(this).next("p").slideToggle("slow");
+        $(this).parent("article").siblings("article").children("p:visible").slideUp("slow");
+
+        $(this).children("h3").toggleClass("active-acc-text");
+        $(this).parent("article").siblings("article").children("div").children("h3").removeClass("active-acc-text");
+
     });
 });
 
+
+/*
 let flag=true;
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -32,3 +42,4 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+*/
