@@ -8,7 +8,6 @@
     position: fixed;
     bottom: 0;
     z-index: 9999;
-    overflow: hidden;
 }
 .logo-menu{
     padding-top: 16px;
@@ -21,6 +20,7 @@ header a{
     text-decoration: none;
     position: relative;
 }
+
 header>nav>ul>li>a:link, header>nav>ul>li>a:hover, header>nav>ul>li>a:active { color: aliceblue; text-decoration: none; }
 header>nav>ul>li>a:after {
 	display: block;
@@ -33,10 +33,81 @@ header>nav>ul>li>a:after {
 	transition: width 0.4s ease-out; /*задаём время анимации*/
 }
 
+
+
+
 header>nav>ul>li>a:hover:after,
 header>nav>ul>li>a:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: aliceblue;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #d83016;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown:hover .dropbtn {background-color: rgb(192, 70, 0);} */
+
+
+.block-main-btn{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 20px;
+    width: 220px;
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid #f14d34;
+    border-radius: 5px;
+    transition: background .3s;
+    margin-bottom: 45px;
+}
+.block-main-btn:focus,.block-main-btn:hover,.block-main-btn:active {
+    background: #f14d34;
+    text-decoration: none;
+    color: #fff
+}
+
 .menu{
     display: flex; 
     align-items: center;
@@ -59,7 +130,11 @@ header input, header ul {
     width: 100%;
     
   }
-
+:checked ~ dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .check-menu{
     float: right;
 }
@@ -95,6 +170,7 @@ header nav ul li{
     font-size: 12px;
     letter-spacing: 1.2px;
     float: right;
+    margin-left: 15px;
 }
 header nav ul{
     float: right;
@@ -127,6 +203,9 @@ header nav{
     letter-spacing: 1.2px;  
 } 
 @media screen and (min-width: 768px){
+    header nav ul li{
+        margin-left: 0px;
+    }
     .navbar{
         background-color: transparent;
         width: auto;
@@ -155,6 +234,15 @@ header nav{
         
         }
 
+
+        /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f14d34;
+    min-width: 160px;
+    z-index: 1;
+}
 
     .check-menu{ display: none;}
     /*---header ---*/
