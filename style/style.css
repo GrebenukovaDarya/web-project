@@ -10,9 +10,6 @@ body {
     min-height: 100%;
 }
 /*---header---*/
-
-
-
 /*
 .button-tariff{
     border: 3px solid rgb(255, 145, 0);;
@@ -39,11 +36,16 @@ body {
     border-radius: 10px;
     height: 100%;
 }
-.inf-1-img{
-    background-position: 25% 0%;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-    background-image: url(img/icon-bg.svg);
+.inf-1-img::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 70px;
+    background: url("img/icon-bg.svg") no-repeat center;
+    background-size: contain;
+    left: 15px;
+    top: 15px;
 }
 .inf-1-block p{
     text-align: left;
@@ -178,12 +180,18 @@ body {
     max-height: 200px;
     max-width: 100px;
 }
-.inf-4-img{
-    background-position: 25% 0%;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-    background-image: url(img/icon-bg.svg);
+.inf-4-img::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 70px;
+    background: url("img/icon-bg.svg") no-repeat center;
+    background-size: contain;
+    left: 0;
+    top: 15px;
 }
+
   /*---team---*/
 .team-block img{
     max-height: 280px;
@@ -201,11 +209,57 @@ body {
 .team-block h3, .team-block p{
     max-width: 280px;
 }
- /*---text---*/
-.case-wrapper img{
-    max-width: 100%;
-    border-radius: 8px;
+ /*---case---*/
+.case-block{
+    display: flex;
 }
+.case-img-wrapper {
+    width: 100%;
+    max-height: 200px;
+}
+.case-img-wrapper>a>img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+}
+.case-wrapper-2 {
+    width:100%;
+    border-radius: 5px;
+    position:relative;
+}
+
+.case-img-wrapper-2 {
+    width: 100%;
+    height: 100%;
+}
+.case-img-wrapper-2>a>img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index:4;
+}
+
+.case-img-wrapper-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 55.58%);
+    z-index: 5;
+    border-radius: 5px;
+}
+.case-2-text {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index:6;
+}
+
   /*---slider---*/
 .view-slider::before{
     content: "";
@@ -238,7 +292,6 @@ body {
     top: 48px;
     left: 10vw;
     right: 10vw;
-    
 }
 .b-slider{
     background-color: rgb(255, 255, 255);
@@ -310,17 +363,10 @@ body {
     display: block;
 }
 
-  /*---q&a---*/
-.b-accordion p{
-    padding-left: 29px;
+  /*---faq---*/
+.active {
+    border: 4px solid #f14d34;
 }
-.b-accordion section:target {   
-    border-color: #f14d34;
-    color: #f14d34;
-    background:#af5353;   
-    padding:10px;  
-} 
- 
   /*---footer---*/
 .bottom-wrapper{
     background-color: rgb(30, 22, 42);
@@ -421,9 +467,42 @@ footer ul li img{
     content: "✓";
  
  ---*/
-
+ @media screen and (min-width: 1000px){
+    .inf-1-img::before{
+        left: 10px;
+        top: 15px;
+    }
+}
 
 @media screen and (min-width: 768px){
+
+header ul { display: flex; /* Прячем */ }
+.check-menu{ display: none;}
+  /*---header ---*/
+.button-menu{
+    display: none;
+}
+.menu{
+    background-color: transparent;
+    position:relative;
+    display: inline;
+    order: 0;
+}
+header nav{
+    display:inline;
+}
+.right-col{
+    text-align:unset;
+}
+.header-cont{
+    flex-direction: unset;
+}
+
+.navigation{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
   /*---main ---*/
   /*
   .b-bottom, .b-main{
@@ -436,6 +515,10 @@ footer ul li img{
     }
     .inf-1-img{
         background-position: 25% 0%;
+    }
+    .inf-1-img::before{
+        left: -20px;
+        top: 15px;
     }
     .square-wrapper{
         height: 100%;
@@ -574,6 +657,37 @@ body{
     font-size: 12px;
     font-weight: 600;
 }
+.case-text {
+    color:#4F5A73;
+    font-size: 16px;
+    font-weight: 600;
+}
+.case-date {
+    color:#4F5A73;
+    font-size: 14px;
+    font-weight: 500;
+}
+.case-title {
+    color:#050C33;
+    font-size: 20px;
+    font-weight: 600;
+}
+.case-additional-text {
+    color:#7e9bdf;
+    font-size: 16px;
+    font-weight: 600;
+}
+.case-2-title{
+    color:#f7f8ff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.case-2-date{
+    color:#8491af;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .slide-bot a{
     color:#050C33;
     font-size: 16px;
@@ -620,10 +734,6 @@ body{
     color:#4F5A73;
     font-size: 16px;
     font-weight: 600;
-}
-
-.active {
-    border: 4px solid #f14d34;
 }
 
 @font-face {
