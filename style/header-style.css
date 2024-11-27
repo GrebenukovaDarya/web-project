@@ -8,6 +8,7 @@
     position: fixed;
     bottom: 0;
     z-index: 9999;
+    overflow: hidden;
 }
 header a{
     color: aliceblue;
@@ -45,7 +46,7 @@ header input, header ul {
     
     /* Прячем */ }
 :checked ~ ul {
-    background-color: #f14d34;
+    background-color: black;
     
     display: flex;
     flex-direction: column;
