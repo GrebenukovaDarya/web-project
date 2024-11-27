@@ -10,6 +10,12 @@
     z-index: 9999;
     overflow: hidden;
 }
+.logo-menu{
+    padding-top: 16px;
+}
+#logo{
+    margin: 5px;
+}
 header a{
     color: aliceblue;
     text-decoration: none;
@@ -127,10 +133,15 @@ header nav{
         flex-direction: row-reverse;
         position:static;
         bottom: auto;
-        z-index: 1;
+        z-index: auto;
     }
     #menu1{display: none;}
-
+    .logo-menu{
+        padding-top: 0px;
+    }
+    #logo{
+        margin: 0px;
+    }
 
     header ul { 
         background-color: transparent;
