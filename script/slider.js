@@ -33,23 +33,29 @@ nextbtn.addEventListener("click", function () {
     num.innerHTML = '0' + n;
 });
 
-$('.autoplay-1').slick({
-    arrows: false,
-    adaptiveWidth: false,
+$(".slider-1").slick({
+    dots: false,
     infinite: true,
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    arrows: false,
     centerMode: true,
-    
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: 'linear',
     responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 6
+            }
+        },
         {
             breakpoint: 1000,
             settings: {
               arrows: false,
               centerMode: true,
-              slidesToShow: 3
+              slidesToShow: 4
             }
         },
         {
@@ -57,16 +63,64 @@ $('.autoplay-1').slick({
           settings: {
             arrows: false,
             centerMode: true,
-            slidesToShow: 2
+            slidesToShow: 3.1
           }
         },
         {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                slidesToShow: 1
-            }
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 2.5
+          }
         }
-    ]
+      ],
+    slidesToShow: 7.8,
+    slidesToScroll: 1,
+  });
+
+  $(".slider-2").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: 'linear',
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 6.4
+            }
+        },
+        {
+            breakpoint: 1000,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              slidesToShow: 4.4
+            }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3.4
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 2.2
+          }
+        }
+      ],
+    slidesToShow: 7.3,
+    slidesToScroll: 1,
   });
