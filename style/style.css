@@ -1,20 +1,15 @@
+/*---body---*/
+
 html,
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    min-height: 0;
+    min-width: 0;
+    overflow-x: hidden;
 }
-/*---body---*/
-body {
-    min-height: 100%;
-}
-/*---header---*/
-/*
-.button-tariff{
-    border: 3px solid rgb(255, 145, 0);;
-}
-*/
 
   /*---main---*/
 .test{
@@ -332,35 +327,50 @@ body {
 .slick-arrow-wrapper{
     max-height: 70px;
 }
+
   /*---slider-2---*/
-.b-slider-2 {
-    padding-left: 0;
-    padding-right: 0;
-}
-.slide-2{
-    justify-content: center;
-    background: #ffffff;
-    border-radius: 8px;
-    border: 2px solid #dfdede;
-    min-width: 200px;
-    margin: 5px;
-}
-.b-slider-2 img{
-    max-height: 40px;
-    max-width: 200px;
-}
-.autoplay-1 {
-    padding-left: 0;
-    padding-right: 0;
-    display: block;
-    background-color: #af5353;
-    overflow: hidden;
-}
-.slick-track {
+.auto-slider-1-wrapper{
     position: relative;
-    top: 0;
-    left: 0;
-    display: block;
+    height: 100px;
+    width: 100%;
+    overflow: visible;
+}
+.auto-slider-1{
+    position: absolute;
+    height: 100%;
+    min-width: 125vw;
+    right: 0;
+    margin-right: -25%;
+    padding: 0;
+}
+.slide-2-1 {
+    max-height: 90px;
+    width: 30vw;
+    margin: 5px;
+    
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #b6b6b6;
+    overflow:hidden;
+}
+.slide-2-1 img{
+    height: 84px;
+    max-width: auto;
+    margin-top: 2px;
+}
+
+.b-slider-2 .slick-list {
+    height: 100px;
+    position: relative;
+}
+.b-slider-2 .slick-track {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    right: 0;
+    margin-right: -25%;
+    margin: 0;
+    padding: 0;
 }
 
   /*---faq---*/
@@ -558,13 +568,9 @@ header nav{
         border-bottom: 0px;
         border-right: 2px solid #dfdede;
     }
-    .b-slider-2 p{
+    .slider-2-head {
         text-align: center;
     }
-    .slide-2 {
-        width: 200px;
-    }
-
 
     /*---footer---*/
     /*
