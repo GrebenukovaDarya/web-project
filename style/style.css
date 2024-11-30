@@ -5,16 +5,15 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    height: 100%;
+    height: 100vh;
     min-height: 0;
     min-width: 0;
     overflow-x: hidden;
 }
 
+
   /*---main---*/
-.test{
-    background-color: #d83016;
-}
+
 .block-name{
     text-align: center;
 }
@@ -22,8 +21,8 @@ body{
     text-decoration: underline;
 }
 .b-main{
-    background-color: rgb(235, 232, 238);
-    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 70px;
 }
 
   /*---info-1---*/
@@ -56,7 +55,7 @@ body{
     width: 100%;
     min-height: 220px;
     border-radius: 5px;
-    box-shadow: 0px 10px 15px rgba(135, 133, 141, 0.625);
+    box-shadow: 10px 10px 50px rgba(135, 133, 141, 0.284);
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -97,12 +96,35 @@ body{
 }
 
   /*---info-3---*/
+.b-info-3 {
+    position: relative;
+    background: 
+    linear-gradient(254.72deg, 
+    rgba(255, 255, 255, .276) -114.85%, 
+    rgba(255, 255, 255, 0) 69.04%), 
+    #040613;
+}
+.b-info-3:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/drupal-logo-2.svg) no-repeat right bottom;
+    background-size: contain;
+    z-index: 10;
+}
+
 .b-info-3 p{
     border-left: 3px solid #f14d34;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 10px;
     min-height: 88px;
+    width: 260px;
+    max-width: 100%;
 }
 .b-info-3 h2{
     max-height: 60px;
@@ -110,6 +132,30 @@ body{
 
 
   /*---tariffs---*/
+.b-tarif{
+    position: relative;
+    background-color: #ffffff;
+}
+.b-tarif .block-name{
+    position: relative;
+    z-index: 3;
+}
+.b-tarif:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/tariff-bg.png) no-repeat right;
+    z-index: 1;
+    background-size: auto 100%;
+}
+.b-t, .tariffs-bot-text {
+    position: relative;
+    z-index: 3;
+}
 .t-part, .t-part-b{
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -151,7 +197,10 @@ body{
 .b-tarif h3{
     border-bottom: 2px solid #dfdede;
 }
-.b-tarif p{
+.b-tarif p, .b-tarif a{
+    text-align: center;
+}
+.tariffs-bot-text {
     text-align: center;
 }
 
@@ -256,6 +305,14 @@ body{
 }
 
   /*---slider---*/
+.rev-wrapper{
+    background: url(img/right-quote-sign.svg) no-repeat left top;
+    background-size: 25%;
+    padding-bottom: 60px;
+}
+.view-slider {
+    position: relative;
+}
 .view-slider::before{
     content: "";
     display: block;
@@ -268,7 +325,7 @@ body{
     position: absolute;
     z-index: 5;
     bottom: 0;
-    top: 68px;
+    top: -20px;
     left: 7vw;
     right: 7vw;
 }
@@ -284,7 +341,7 @@ body{
     position: absolute;
     z-index: 4;
     bottom: 0;
-    top: 48px;
+    top: -40px;
     left: 10vw;
     right: 10vw;
 }
@@ -378,8 +435,18 @@ body{
     border: 4px solid #f14d34;
 }
   /*---footer---*/
+footer {
+    background: 
+    linear-gradient(254.72deg,
+     rgba(255, 255, 255, .276) -114.85%, 
+     rgba(255, 255, 255, 0) 69.04%), 
+     url(img/footer-D-1.svg) no-repeat top center, 
+     url(img/footer-D-2.png) no-repeat bottom right, 
+     #040613;
+    background-repeat: no-repeat;
+    padding: 40px 0 50px;
+}
 .bottom-wrapper{
-    background-color: rgb(30, 22, 42);
     width: 100%;
 }
 .b-form label, .input-field{
@@ -401,9 +468,20 @@ body{
     border-color: #f14d34;
     color: #ffffff;
 }
-footer{
-    border-top: 1px solid #d7d7d7;
-    margin-bottom: 50px;
+.ftr{
+    padding-top: 20px;
+    position: relative;
+}
+.ftr:before {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    height: 2px;
+    width: 200vw;
+    background: rgba(256, 256, 256, .3);
+    top: -2px;
+    right: -50%;
 }
 .footer-body{
     padding: 3%;
@@ -419,7 +497,7 @@ footer{
 .b-footer-text p{
     color:#bcbcbc;
 }
-footer ul li{
+.ftr ul li{
     background-color: #f14d34;
     border-radius: 8px;
     height: 30px;
@@ -428,7 +506,7 @@ footer ul li{
     margin: 2px;
     list-style-type: none;
 }
-footer ul li img{
+.ftr ul li img{
     margin: 5px;
     height: 20px;
     width: 20px;
@@ -477,18 +555,12 @@ footer ul li img{
     content: "✓";
  
  ---*/
- @media screen and (min-width: 1000px){
-    .inf-1-img::before{
-        left: 10px;
-        top: 15px;
-    }
-}
 
 @media screen and (min-width: 768px){
-
-header ul { display: flex; /* Прячем */ }
+/*
+header ul { display: flex;  }
 .check-menu{ display: none;}
-  /*---header ---*/
+
 .button-menu{
     display: none;
 }
@@ -508,18 +580,8 @@ header nav{
     flex-direction: unset;
 }
 
-.navigation{
-    padding-left: 15vw;
-    padding-right: 15vw;
-}
-
+*/
   /*---main ---*/
-  /*
-  .b-bottom, .b-main{
-    width:100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    } */
     #side-img{
         right: 10vw;
     }
@@ -527,7 +589,8 @@ header nav{
         background-position: 25% 0%;
     }
     .inf-1-img::before{
-        left: -20px;
+        width: 80%;
+        right: -10px;
         top: 15px;
     }
     .square-wrapper{
@@ -541,6 +604,7 @@ header nav{
     }
     .inf-3-body{
         align-items:center;
+        margin-left: 50%;
     }
     .inf-3-body h2{
         height: 20%;
@@ -548,19 +612,16 @@ header nav{
     .inf-3-articles {
         height: 80%;
     }
-    #overlay-1, #overlay-2 {
-        background-color: rgba(255, 255, 255, 0.333);
-        border-radius: 5px;
-    }
+    /*--- tariff ---*/
     .t-part {
-        box-shadow: 0px 10px 15px rgba(49, 49, 49, 0.625);
-    }
-    .t-part {
+        box-shadow: 0px 10px 30px rgba(70, 70, 70, 0.464);
         height: 550px;
     }
     .t-part-b {
-        max-height: 550px;
+       background-color: #f8f8f8;
+       border-color: #e1e1e1;
     }
+    /*--- info-4 ---*/
     .b-info-4 h3, .b-info-4 p{
         text-align: start;
     }
@@ -573,13 +634,9 @@ header nav{
     }
 
     /*---footer---*/
-    /*
-    .bottom-wrapper {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }*/
-    .bottom-wrapper {
-        margin-bottom: 50px;
+    footer{
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
     .b-footer-text h2{
         text-align: start;
@@ -589,6 +646,10 @@ header nav{
 @media screen and (min-width: 1000px){
     .t-part {
         max-height: 500px;
+    }
+    .inf-1-img::before{
+        left: 10px;
+        top: 15px;
     }
 }
 
@@ -663,6 +724,7 @@ body{
     font-size: 12px;
     font-weight: 600;
 }
+
 .case-text {
     color:#4F5A73;
     font-size: 16px;
@@ -708,11 +770,12 @@ body{
     font-size: 28px;
     color:#050C33;
 }
-.article-body{
-    color: #FFFFFFB3;
+
+.inf-3-articles p{
+    color: #ffffffb3;
 }
-.article-body a{
-    color:#f14d34;
+.inf-3-articles a{
+    color: #f14d34;
 }
 .b-t h3 {
     color:#f14d34;
@@ -742,6 +805,7 @@ body{
     font-weight: 600;
 }
 
+
 @font-face {
     font-family: 'Montserrat';
     src: url( "fonts/Montserrat-Regular.ttf") format("truetype");
@@ -751,8 +815,4 @@ body{
     font-family: 'Montserrat';
     src: url( "fonts/Montserrat-Bold.ttf") format("truetype");
     font-weight: bold;
-}
-
-.b-info-3{
-    background-color: #050C33;
 }
