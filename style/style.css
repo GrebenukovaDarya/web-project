@@ -13,12 +13,18 @@ body{
 
 
   /*---main---*/
-
+/*
 .block-name{
     text-align: center;
 }
 .underlined{
     text-decoration: underline;
+}*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .b-main{
     background-color: rgb(255, 255, 255);
@@ -50,6 +56,11 @@ body{
 }
 
   /*---info-2---*/
+.squares {
+    position: relative;
+    margin-bottom: -200px;
+    z-index:10;
+}
 .square-wrapper{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -96,13 +107,21 @@ body{
 }
 
   /*---info-3---*/
+
+
 .b-info-3 {
     position: relative;
     background: 
-    linear-gradient(254.72deg, 
+    linear-gradient(270deg, 
     rgba(255, 255, 255, .276) -114.85%, 
     rgba(255, 255, 255, 0) 69.04%), 
     #040613;
+    color: #7e9bdf;
+    padding: 250px 0 0;
+}
+.b-info-3 .container{
+    position: relative;
+    z-index: 6;
 }
 .b-info-3:before{
     content: "";
@@ -114,9 +133,27 @@ body{
     left: 0;
     background: url(img/drupal-logo-2.svg) no-repeat right bottom;
     background-size: contain;
-    z-index: 10;
+    z-index: 5;
 }
-
+.inf-3-item p{
+    border-left: 3px solid #f14d34;
+    min-height: 90px;
+    height: 100%;
+    padding: 10px;
+}
+.inf-3-col {
+    margin-bottom: 30px;
+}
+.side-image {
+    position: relative;
+    z-index: 6;
+    width: 80vw;
+}
+.side-image img{
+    width: 100%;
+    transform: translateY(15%);
+}
+/*
 .b-info-3 p{
     border-left: 3px solid #f14d34;
     padding-left: 15px;
@@ -129,12 +166,16 @@ body{
 .b-info-3 h2{
     max-height: 60px;
 }
+*/
 
 
   /*---tariffs---*/
 .b-tarif{
     position: relative;
     background-color: #ffffff;
+}
+.b-tarif .container {
+    padding-top: 15vw;
 }
 .b-tarif .block-name{
     position: relative;
@@ -437,7 +478,7 @@ body{
   /*---footer---*/
 footer {
     background: 
-    linear-gradient(254.72deg,
+    linear-gradient(270deg,
      rgba(255, 255, 255, .276) -114.85%, 
      rgba(255, 255, 255, 0) 69.04%), 
      url(img/footer-D-1.svg) no-repeat top center, 
@@ -582,9 +623,6 @@ header nav{
 
 */
   /*---main ---*/
-    #side-img{
-        right: 10vw;
-    }
     .inf-1-img{
         background-position: 25% 0%;
     }
@@ -593,6 +631,7 @@ header nav{
         right: -10px;
         top: 15px;
     }
+    
     .square-wrapper{
         height: 100%;
     }
@@ -601,16 +640,6 @@ header nav{
         background-size: 100px 100px;
         background-repeat: no-repeat;
         background-image: url(img/icon-bg.svg);
-    }
-    .inf-3-body{
-        align-items:center;
-        margin-left: 50%;
-    }
-    .inf-3-body h2{
-        height: 20%;
-    }
-    .inf-3-articles {
-        height: 80%;
     }
     /*--- tariff ---*/
     .t-part {
@@ -643,13 +672,26 @@ header nav{
     }
 
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 992px){
     .t-part {
         max-height: 500px;
     }
     .inf-1-img::before{
         left: 10px;
         top: 15px;
+    }
+    .inf-3-body .col-sm-6{
+        width: 50%;
+    }
+    .inf-3-body {
+        margin-left: 50%;
+    }
+    .side-image {
+        position: absolute;
+        width: 50%;
+        max-height: 90%;
+        left: 0;
+        bottom: 0;
     }
 }
 
