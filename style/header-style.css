@@ -48,8 +48,8 @@ header a{
     position: relative;
 }
 
-header>nav>ul>li>a:link, header>nav>ul>li>a:hover, header>nav>ul>li>a:active { color: aliceblue; text-decoration: none; }
-header>nav>ul>li>a:after {
+.nav-link:link, .nav-link:hover, .nav-link:active { color: aliceblue; text-decoration: none; }
+.nav-link:after {
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
@@ -59,12 +59,8 @@ header>nav>ul>li>a:after {
 	content: "";
 	transition: width 0.4s ease-out; /*задаём время анимации*/
 }
-
-
-
-
-header>nav>ul>li>a:hover:after,
-header>nav>ul>li>a:focus:after {
+.nav-link:hover:after,
+.nav-link:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
@@ -178,7 +174,7 @@ header{
     overflow: hidden;
     position: relative;
     color: aliceblue;
-    
+    text-decoration: none;
 }
 .header__video {
     max-width: 100%;
