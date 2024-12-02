@@ -36,107 +36,119 @@
     <div class="container-fluid page">
       <div class="b-header row d-flex mb-2">
         <header> 
-           
-          <video class="header__video" loop autoplay muted>
-              <source src="./style/img/video.mp4" type="video/mp4">
+           <div class="header__video">
+              <video class="h-vid"  loop autoplay muted>
+                  <source src="./style/img/video.mp4" type="video/mp4">
               
-          </video>
+              </video>
+           </div>
           
-          <div class="navigation container row d-flex mt-5 col-12 ">
-            <nav class="navbar col-12">
-              
-              <div class="col-md-10 px-0 justify-content-around">
-                  <input type="checkbox" name="menu" id="menu">
-                  <ul class="menu-none p-0 py-3 py-md-0 m-md-0 w-md-auto">
-                      <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПОДДЕРЖКА DRUPAL </a></li>
-                      <li class="py-2 px-2 float-md-left">  
-                          <div class="dropdown">
-                              <form action="">
-                                  <button class="dropbtn px-0"> АДМИНИСТРИРОВАНИЕ <img src="style/img/arrow-lang.svg" alt=""> </button>
-                              </form>
-                              <div class="dropdown-content">
-                                  <a href="index.html">МИГРАЦИЯ</a>
-                                  <a href="index.html">БЭКАПЫ</a>
-                                  <a href="index.html">АУДИТ БЕЗОПАСНОСТИ</a>
-                                  <a href="index.html">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
-                                  <a href="index.html">ПЕРЕЕЗД НА HTTPS</a>
-                              </div>
-                          </div>
-                        </li>
-                        <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПРОДВИЖЕНИЕ</a></li>
-                        <li class="py-2 px-2 float-md-left">  
-                              <div class="dropdown">
-                                <form action="index.html">
-                                    <button class="dropbtn px-0"> О НАС <img src="style/img/arrow-lang.svg" alt=""> </button>
-                                </form>
-                              <div class="dropdown-content">
-                                  <a href="index.html">КОМАНДА</a>
-                                  <a href="index.html">ВАКАНСИИ</a>
-                              </div>
-                            </div> 
-                        </li>
+          
+                <div class="navigation row d-flex mt-5 ">
+                  <div class="nav-cont container">
+                      <nav class="navbar">
                         
-                        <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПРОЕКТЫ </a></li>
-                        <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> КОНТАКТЫ </a></li>
-                    </ul>
-              </div>
-              <div class="logo-menu col-md-2 float-md-left">
-                <a href="index.html">
-                  <img id="logo" src="style/img/drupal-coder.svg" alt="" width="140" height="20">
-                </a>
-                  <label class="" for="menu" id="menu1" style="background-image: url(../style/image/менюю.png);">OPEN</label>
-              </div>
-              
-              
-          </nav>
-            
-          <div class="header-cont container d-flex col-md-12 py-md-5 px-md-0 mx-md-0 my-4 ">
-              <div class="right-col col-md-6 pr-4 mr-md-4">
-                <div class="header-title">
-                  Поддержка сайтов на Drupal
-                </div>
-                  
-                <div class="header-text-info py-md-2">
-                    Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности
-                </div>
-                  
-                <div class="button-tariff col-md-5 my-4 px-0">
-                  <div class="block-main-wrapper">
-                    <a href="#tariffs" class="block-main-btn flowing-scroll">ТАРИФЫ</a>
-                  </div>
+                          <div class="logo-menu col-md-2 float-md-left order-1 order-md-0">
+                            <a href="index.html">
+                              <img id="logo" src="style/img/drupal-coder.svg" alt="" width="140" height="20">
+                            </a>
+                              <label class="" for="menu" id="menu1" style="background-image: url(../style/image/менюю.png);">≡</label>
+                          </div>
+                        
+                        
 
-                </div>
+                        <div class="col-md-12 col-lg-10 px-0 justify-content-around">
+                            <input type="checkbox" name="menu" id="menu">
+                            <ul class="menu-none p-0 py-3 py-md-0 m-md-0 w-md-auto">
+                                <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПОДДЕРЖКА DRUPAL </a></li>
+                                <li class="py-2 px-2 float-md-left">  
+                                    <div class="dropdown">
+                                        <form action="">
+                                            <button class="dropbtn px-0"> АДМИНИСТРИРОВАНИЕ <img src="style/img/arrow-lang.svg" alt=""> </button>
+                                        </form>
+                                        <div class="dropdown-content">
+                                            <a href="index.html">МИГРАЦИЯ</a>
+                                            <a href="index.html">БЭКАПЫ</a>
+                                            <a href="index.html">АУДИТ БЕЗОПАСНОСТИ</a>
+                                            <a href="index.html">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                                            <a href="index.html">ПЕРЕЕЗД НА HTTPS</a>
+                                        </div>
+                                    </div>
+                                  </li>
+                                  <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПРОДВИЖЕНИЕ</a></li>
+                                  <li class="py-2 px-2 float-md-left">  
+                                        <div class="dropdown">
+                                          <form action="index.html">
+                                              <button class="dropbtn px-0"> О НАС <img src="style/img/arrow-lang.svg" alt=""> </button>
+                                          </form>
+                                        <div class="dropdown-content">
+                                            <a href="index.html">КОМАНДА</a>
+                                            <a href="index.html">ВАКАНСИИ</a>
+                                        </div>
+                                      </div> 
+                                  </li>
+                                  
+                                  <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> ПРОЕКТЫ </a></li>
+                                  <li class="py-2 px-2 float-md-left"> <a  href="" class="nav-link p-0 text-md-center"> КОНТАКТЫ </a></li>
+                              </ul>
+                        </div>
+                        
+                        
+                        
+                    </nav>
+                  </div>
+                  
 
-              </div>
-              
-              <div class="row pl-2 ml-md-4">
-                  <div class="advantages-header col-6 col-md-4 my-3">
+                <div class="container"> 
+                <div class="header-cont container d-flex col-md-12 py-md-5 px-md-0 mx-md-0 my-4 ">
+                    <div class="right-col col-md-6 pr-4 mr-md-4">
+                      <div class="header-title">
+                        Поддержка сайтов на Drupal
+                      </div>
+                        
+                      <div class="header-text-info py-md-2">
+                          Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности
+                      </div>
+                        
+                      <div class="button-tariff col-md-5 my-4 px-0">
+                        <div class="block-main-wrapper">
+                          <a href="#tariffs" class="block-main-btn flowing-scroll">ТАРИФЫ</a>
+                        </div>
+
+                      </div>
+
+                    </div>
                     
-                    <h1>#1 <img src="style/img/cup.png" alt=""></h1> 
-                    <p class="pl-2 ">  Drupal-разрабочтик в России по версии Рейтинга Рунета </p>
-                  </div>
-                  <div class="advantages-header col-6 col-md-4 my-3">
-                     <h2>3+</h2><p class="pl-2"> средний опыт специалистов более 3 лет</p>
-                    
-                  </div>
-                  <div class="advantages-header col-6 col-md-4 my-3">
-                     <h2>14</h2><p class="pl-2"> лет опыта в сфере Drupal </p>
-                    
-                  </div>
-                  <div class="advantages-header col-6 col-md-4 my-3">
-                    <h2>50+</h2><p class="pl-2"> модулей и тем в формает DrupalGive</p>
-                  </div>
-                  <div class="advantages-header col-6 col-md-4 my-3">
-                     <h2>90 000+</h2><p class="pl-2"> часов поддержки на Drupal </p>
-                    
-                  </div>
-                  <div class="advantages-header col-6 col-md-4 my-3">
-                     <h2>300+</h2><p class="pl-2"> Проектов на поддержке </p>
-                    
-                  </div>
+                    <div class="row pl-2 ml-md-4">
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          
+                          <h1>#1 <img src="style/img/cup.png" alt=""></h1> 
+                          <p class="pl-2 ">  Drupal-разрабочтик в России по версии Рейтинга Рунета </p>
+                        </div>
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          <h2>3+</h2><p class="pl-2"> средний опыт специалистов более 3 лет</p>
+                          
+                        </div>
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          <h2>14</h2><p class="pl-2"> лет опыта в сфере Drupal </p>
+                          
+                        </div>
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          <h2>50+</h2><p class="pl-2"> модулей и тем в формает DrupalGive</p>
+                        </div>
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          <h2>90 000+</h2><p class="pl-2"> часов поддержки на Drupal </p>
+                          
+                        </div>
+                        <div class="advantages-header col-6 col-lg-4 my-3">
+                          <h2>300+</h2><p class="pl-2"> Проектов на поддержке </p>
+                          
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
-        </div>
+          
 
         </header>
       </div>
