@@ -90,7 +90,9 @@ header a{
 /* Change the background color of the dropdown button when the dropdown content is shown 
 .dropdown:hover .dropbtn {background-color: rgb(192, 70, 0);} */
 
-
+.nav-link:hover{
+    color: #f14d34;
+}
 .block-main-btn{
     display: inline-block;
     font-weight: 500;
@@ -147,8 +149,6 @@ header input, header ul {
 header nav{
     display: none;
 }
-
-
 
 
 header{
@@ -323,24 +323,23 @@ header nav{
     .header__video::after{
         transform: translateY(0);
     }
-    .nav-link:link, .nav-link:hover, .nav-link:active { color: aliceblue; text-decoration: none; }
-.nav-link:after {
-	display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 3px; /*задаём ширину линии*/
-	background-color: #f14d34; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.4s ease-out; /*задаём время анимации*/
-}
-.nav-link:hover:after,
-.nav-link:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-.nav-link:visited{
-    text-decoration: underline;
-    height: 3px; /*задаём ширину линии*/
-	background-color: #f14d34; /*задаём цвет линии*/
-}
+    .nav-link:after {
+        display: block;
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 3px; /*задаём ширину линии*/
+        background-color: #f14d34; /*задаём цвет линии*/
+        content: "";
+        transition: width 0.4s ease-out; /*задаём время анимации*/
+    }
+    .nav-link:hover:after,
+    .nav-link:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+    .underlined {
+        text-decoration: none;
+        color:#f14d34;
+    }
+
 }
