@@ -1,3 +1,18 @@
+.dropdown-content a:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 200vw;
+    background: rgba(256, 256, 256, .3);
+    top: 34px;
+    right: -50%;
+}
+    
+
+.dropdown{
+    width: 100%;
+}
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -79,13 +94,14 @@ header a{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: aliceblue;
-    padding: 5px 10px;
+    padding-left: 14px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #d83016;}
+.dropdown-content a:hover {background-color: transparent;
+    color: #f14d34; }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -218,7 +234,7 @@ header nav ul li{
     font-size: 12px;
     letter-spacing: 1.2px;
     float: right;
-    margin-left: 15px;
+    
 }
 header nav ul{
     float: right;
@@ -340,9 +356,14 @@ header nav{
     .nav-link:focus:after {
         width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
     }
-    .underlined {
+    .underlined-link {
         text-decoration: none;
         color:#f14d34;
     }
-
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #d83016;
+        color: aliceblue;}
+    .dropdown-content a:before{
+        display: none;
+    }
 }
