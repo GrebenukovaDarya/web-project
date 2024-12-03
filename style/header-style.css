@@ -37,7 +37,10 @@
     /*margin-left: -15px ;*/
 }
 .logo-menu{
-    padding-top: 16px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #logo{
     margin: 5px;
