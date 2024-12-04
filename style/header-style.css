@@ -178,6 +178,7 @@ header{
     position: relative;
     color: aliceblue;
     text-decoration: none;
+    font-family:'Montserrat';
 }
 .header__video {
     max-width: 100%;
@@ -378,6 +379,21 @@ header nav{
         color: aliceblue;}
     .dropdown-content a:before{
         display: none;
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url( "fonts/Montserrat-Regular.ttf") format("truetype");
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url( "fonts/Montserrat-Bold.ttf") format("truetype");
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url( "fonts/Montserrat-Medium.ttf") format("truetype");
+        font-weight: 500;
     }
     
     
