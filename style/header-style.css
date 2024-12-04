@@ -87,13 +87,14 @@ header a{
     flex-direction: column;
     position: relative;
     background-color: black;
-    min-width: 160px;
+    min-width: 180px;
+    width: auto;
     z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: aliceblue;
+    /*color: aliceblue;*/
     padding-left: 14px;
     text-decoration: none;
     display: block;
@@ -273,7 +274,19 @@ header nav{
 .underlined-link {
     color:#f14d34;
 }
+.changecolor-link{
+    color:#f14d34;
+}
 @media screen and (min-width: 768px){
+    .changecolor-link{
+        color:aliceblue;
+        background-color: #be422f;
+    }
+    .underlined-link {
+        color:aliceblue;
+        border-bottom: solid 3px #f14d34;
+    }
+
     .nav-cont{
         margin: auto;
 
@@ -300,27 +313,27 @@ header nav{
         margin: 0px;
     }
 
-    header ul { 
+    header nav ul { 
         background-color: transparent;
         display: flex; 
         flex-direction: row;
-        /* Прячем */ }
+    }
     :checked ~ ul {
         background-color: transparent;
         display: flex; 
         flex-direction: row-reverse;
-        
-        }
+    }
 
 
-        /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f14d34;
-    min-width: 160px;
-    z-index: 1;
-}
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f14d34;
+        min-width: 180px;
+        width: auto;
+        z-index: 1;
+    }
 
     .check-menu{ display: none;}
     /*---header ---*/
