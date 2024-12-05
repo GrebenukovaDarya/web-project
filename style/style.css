@@ -840,6 +840,10 @@ footer {
     .b-footer-text h2{
         text-align: start;
     }
+    .side-image img{
+    width: 100%;
+    transform: translateY(7%);
+}
 
 }
 @media screen and (min-width: 992px){
@@ -870,6 +874,7 @@ footer {
         left: 0;
         bottom: 0;
     }
+    
 }
 
 @font-face {
