@@ -1,7 +1,7 @@
 /*node browser: true */ /*global $ */ /*global alert */
 /*global updateContent */
 window.addEventListener("DOMContentLoaded", function () {
-
+/*
     window.onload = function () {
         const storedFio = localStorage.getItem("field-fio");
         const storedEmail = localStorage.getItem("field-email");
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function () {
             );
         });
     });
-
+*/
     $(function () {
         $(".formcarryForm").submit(function (e) {
             e.preventDefault();
