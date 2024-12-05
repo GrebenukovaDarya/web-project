@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-link'); // Все ссылки навигации
     const currentUrl = window.location.pathname; // Получаем текущий путь (например, /about.html)
@@ -25,3 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 });
+*/
