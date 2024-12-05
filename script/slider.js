@@ -1,14 +1,16 @@
-$('.single-item').slick({
-    dots: false,
-    infinite: true,
-    nextArrow: document.querySelector('#my-arrow-next'),
-    prevArrow: document.querySelector('#my-arrow-prev'),
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+/*global $ */
+
+$(".single-item").slick({
     adaptiveHeight: true,
+    cssEase: "linear",
+    dots: false,
     fade: true,
-    cssEase: 'linear'
+    infinite: true,
+    nextArrow: document.querySelector("#my-arrow-next"),
+    prevArrow: document.querySelector("#my-arrow-prev"),
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    speed: 300
 });
 
 let n=1;
@@ -22,7 +24,7 @@ prevbtn.addEventListener("click", function () {
     } else {
         n -=1;
     }
-    num.innerHTML = '0' + n;
+    num.innerHTML = "0" + n;
 });
 nextbtn.addEventListener("click", function () {
     if (n === 8) {
@@ -30,17 +32,17 @@ nextbtn.addEventListener("click", function () {
     } else {
         n +=1;
     }
-    num.innerHTML = '0' + n;
+    num.innerHTML = "0" + n;
 });
 
 $(".slider-1").slick({
-    dots: false,
-    infinite: true,
     arrows: false,
-    centerMode: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    cssEase: 'linear',
+    centerMode: true,
+    cssEase: "linear",
+    dots: false,
+    infinite: true,
     responsive: [
         {
             breakpoint: 1400,
@@ -75,18 +77,18 @@ $(".slider-1").slick({
           }
         }
       ],
-    slidesToShow: 7.8,
     slidesToScroll: 1,
+    slidesToShow: 7.8
   });
 
   $(".slider-2").slick({
-    dots: false,
-    infinite: true,
     arrows: false,
-    centerMode: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    cssEase: 'linear',
+    centerMode: true,
+    cssEase: "linear",
+    dots: false,
+    infinite: true,
     responsive: [
         {
             breakpoint: 1400,
@@ -121,6 +123,6 @@ $(".slider-1").slick({
           }
         }
       ],
-    slidesToShow: 7.3,
     slidesToScroll: 1,
+    slidesToShow: 7.3
   });
